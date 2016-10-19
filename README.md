@@ -1,0 +1,1 @@
+To run this application open index.html in chrome or any modern browser.

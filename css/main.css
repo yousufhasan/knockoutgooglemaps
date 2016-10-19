@@ -1,0 +1,128 @@
+body {
+    background-color: #071011;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+header {
+    height:100px;
+}
+
+.btn {
+    margin:40px auto;
+    display: block;
+}
+#map {
+    height: 80%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.error {
+    color: #fff;
+    width: 100%;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.locationsList {
+    list-style : none;
+    color : #fff;
+}
+
+.locationText {
+    padding-left: 30px;
+}
+
+.listItem {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.listItem:hover {
+    background-color: #1c262f;
+    color: #02b3e4;
+    cursor:pointer;
+}
+
+.textbox {
+    width: 90%;
+    margin: 20px auto 20px auto;
+    height: 50px;
+}
+
+.fa {
+    padding: 0 10px;
+}
+
+a.nav-expander {
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    margin-left: 0;
+    padding: 1em 1.6em 2em;
+    position: absolute;
+    left: 40px;
+    text-decoration: none;
+    top: 20px;
+    width: 250px;
+    z-index: 12;
+    transition: left 0.3s ease-in-out 0s;
+    -webkit-transition: left 0.3s ease-in-out 0s;
+    -moz-transition: left 0.3s ease-in-out 0s;
+    -o-transition: left 0.3s ease-in-out 0s;
+}
+
+a.nav-expander:hover {
+    cursor: pointer;
+}
+
+a.nav-expander.fixed {
+    position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+    left: 20em;
+}
+
+nav {
+    background: #2d2f33;
+    display: block;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    left: -20em;
+    font-size: 15px;
+    top: 0;
+    width: 20em;
+    z-index: 2000;
+    transition: left 0.3s ease-in-out 0s;
+    -webkit-transition: left 0.3s ease-in-out 0s;
+    -moz-transition: left 0.3s ease-in-out 0s;
+    -o-transition: left 0.3s ease-in-out 0s;
+}
+
+.nav-expanded nav {
+    left: 0;
+}
+
+.nav-expanded {
+    margin-right: 0em;
+    transition: left 0.4s ease-in-out 0s;
+    -webkit-transition: left 0.4s ease-in-out 0s;
+    -moz-transition: left 0.4s ease-in-out 0s;
+    -o-transition: left 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    padding-right: 10px;
+}
+

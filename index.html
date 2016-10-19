@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> P6-1: Neighborhood Map Project </title>
+	</head>
+	<body data-bind="css: {'nav-expanded': expanded }">
+		<header class="col-md-12" data-bind="visible: !shouldShowErrorMessage()">
+			<a id="nav-expander" class="nav-expander fixed" data-bind="click: showFilters">
+        	<i class="fa fa-filter fa-lg white"></i>Filter Locations
+        	</a>
+		</header>
+		<nav>
+			<input class="form-control textbox" placeholder="Filter Locations Here." data-bind="value: txtFilterLocation, valueUpdate: 'afterkeydown'" />
+			<ul class="locationsList" data-bind="foreach: filteredMarkers">
+				<li class="listItem" data-bind="click: animateMarker">
+					<span class="locationText" data-bind="text: title"></span>
+				</li>
+			</ul>
+		</nav>
+		<div class="col-md-12 col-sm-12">
+			<div class="error" data-bind="visible: shouldShowErrorMessage"> Google Map Currently Unavailable. Please try later. </div>
+			<div id="map" data-bind="map:showMap"></div>
+		</div>
+		<script type="text/javascript" src="build/js/main.min.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize" onerror="mapError()" async defer></script>
+		<link rel="stylesheet" href="build/css/main.min.css" />
+	</body>
+</html>
